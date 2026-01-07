@@ -9,12 +9,10 @@ namespace WebAppApi.Database.Models
     {
         [Key]
         public int Id { get; set; }
-        public string Name { get; set; } = string.Empty;
+        public string FullName { get; set; } = string.Empty;
         public string Email { get; set; } = string.Empty;
         public string Password { get; set; } = string.Empty;
         public string Avatar { get; set; } = string.Empty;
         public RoleEnum Role { get; set; } = RoleEnum.USER;
-
-        public ICollection<Category>? Categories { get; set; }
     }
 }
