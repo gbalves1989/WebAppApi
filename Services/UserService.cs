@@ -67,7 +67,7 @@ namespace WebAppApi.Services
                 Role = userExists.Role
             };
 
-            return ApiResponse<UserResponse>.Ok(userResponse, "Usuário encontrado com sucesso.");
+            return ApiResponse<UserResponse?>.Ok(userResponse, "Usuário encontrado com sucesso.");
         }
 
         public async Task<ApiResponse<UserResponse>> UpdateAsync(UserRequest userRequest)
